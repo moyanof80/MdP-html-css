@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="COMISION" />
+    <title>COMISION MDP2</title>
+  </head>
+  <body>
+    <div id="red" style="height: 50vh; background-color: red;"></div>
+    <div id="yellow" style="height: 50vh; background-color: yellow;"></div>
+    <div id="orange" style="height: 50vh; background-color: orange;"></div>
+    <div style="height: 100vh;"></div>
+    <!-- Etiquetas de enlaces-->
+    <a href="https://www.w3.org/" title="Titulo del Enlace" target="_blank"
+      >Enlace</a
+    >
+    <a href="./files/Etiquetas.pdf" target="_blank">Archivo PDF</a>
+    <a href="./files/Alin.xlsx">Excel</a>
+    <a href="mailto:nombre@gmail.com">Correo</a>
+    <a href="tel:+5491777777">Phone</a>
+    <br />
+    <a href="#red">Seccion RED</a>
+    <br />
+    <a href="#yellow">Seccion yellow</a>
+    <br />
+    <a href="#orange">Seccion orange</a>
+    <br />
+    <!-- Etiquetas de imagenes -->
+    <img
+      src="./images/animal133"
+      title="Titulo"
+      alt="Imagen"
+      style="width: 30%; height: 80px;"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+      alt="imagen2"
+    />
+
+    <!-- Etiquetas de video -->
+    1.- wmv 2.- MP4 3.- Ogg video/ogg
+    <video width="300" height="240" controls autoplay preload muted>
+      <source src="./images/song.mp4" type="video/mp4" />
+      No soporta Etiqueta
+    </video>
+    <!-- Etiquetas de audio -->
+    1.-wav(audio/wav) 2.-MP3(audio/mpeg) 3.- ogg(audio/ogg)
+    <audio controls autoplay preload>
+      <source src="./images/song.mp3" type="audio/mpeg" />
+    </audio>
+    <br />
+    <!-- Etiquetas de formulario -->
+    Caja de Texto => texto
+    <br />
+    text => texto <br />
+    number => numero <br />
+    radio => selecion simple <br />
+    checkbox => seleccion Multiple <br />
+    password => contraseñas <br />
+    file => Archivo <br />
+    tel => Telefonos <br />
+    date => Fecha <br />
+    url => enlaces <br />
+    hidden => oculto <br />
+    <form>
+      <input
+        maxlength="10"
+        name="ejemplo"
+        type="text"
+        placeholder="Ingrese nombre"
+        required
+        tabindex="2"
+      />
+      <br />
+      <input type="number" required tabindex="1" />
+      <br />
+      <input type="radio" name="sexo" value="M" checked /> M
+      <input type="radio" name="sexo" value="F" /> F
+      <br />
+      <input type="checkbox" name="seleccion" /> A
+      <input type="checkbox" name="seleccion" /> B
+      <input type="checkbox" name="seleccion" /> C
+      <br />
+      <input type="password" placeholder="Ingrese clave" tabindex="3" />
+      <br />
+      <input type="file" />
+      <br />
+      <input type="date" value="2021-07-22" min="2020-01-01" max="2021-07-30" />
+      <br />
+      <!-- INPUT CUADRO DE TEXTO -->
+      <textarea rows="5" name="nombre" placeholder="Direccion" required>
+        VAlor por defecto
+        </textarea
+      >
+      <br />
+      <!--Lista desplegable-->
+      <select name="" required>
+        <option value="">seleccione una opcion</option>
+        <optgroup label="Una Opcion">
+          <option value="1">Opcion 1</option>
+          <option value="2">Opcion 2</option>
+        </optgroup>
+        <optgroup label="seguda Opcion">
+          <option value="3">Opcion 3</option>
+          <option value="4">Opcion 4</option>
+        </optgroup>
+      </select>
+      <br />
+      <!-- Input de tipo lista DATALIST-->
+      <input list="opciones" name="lista" id="" />
+      <datalist id="opciones">
+        <option value="Manzana" />
+        <option value="Manzanita" />
+        <option value="Pera" />
+      </datalist>
+
+      <br />
+      <!--Botones-->
+      type => <br />
+      Submit => enviar la informacion<br />
+      reset => limpia el formulario<br />
+      <button type="reset">Limpiar</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
