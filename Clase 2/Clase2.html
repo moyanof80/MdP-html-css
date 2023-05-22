@@ -8,26 +8,37 @@
     <title>COMISION MDP2</title>
   </head>
   <body>
-    <div id="red" style="height: 50vh; background-color: red;"></div>
+    <!--creo bloque de secciones específicos. ANCLAS: va a determinada sección de la página-->
+    <div id="red" style="height: 50vh; background-color: red;"></div><!--Aqu{i genera el enlace a la sección}-->
     <div id="yellow" style="height: 50vh; background-color: yellow;"></div>
     <div id="orange" style="height: 50vh; background-color: orange;"></div>
     <div style="height: 100vh;"></div>
+
     <!-- Etiquetas de enlaces-->
+
     <a href="https://www.w3.org/" title="Titulo del Enlace" target="_blank"
       >Enlace</a
     >
-    <a href="./files/Etiquetas.pdf" target="_blank">Archivo PDF</a>
+    <!--href es un enlace de referencia-->
+
+    <a href="./files/Etiqu etas.pdf" target="_blank">Archivo PDF</a> <!--target= atributo que hace referencia a la forma en donde se va a abrir el enlace del documento-->
+    <!--_blank lo que va a hacer es abrir el enlace en una ventana nueva-->
     <a href="./files/Alin.xlsx">Excel</a>
-    <a href="mailto:nombre@gmail.com">Correo</a>
-    <a href="tel:+5491777777">Phone</a>
+
+    <!--enlaza o crea un link para correo electronico-->
+    <a href="mailto:nombre@gmail.com">Correo</a><!--creamos un enlace o un hipervínculo a un correo electrónico. Abrirá la aplicación para enviar correo electrónico-->
+    <a href="tel:+5491777777">Phone</a><!--crea enlace para número telefónico. Se debe poner número completo, con número de país-->
     <br />
-    <a href="#red">Seccion RED</a>
+    <a href="#red">Seccion RED</a> <!--se genera sección de ancla. Lo que busco es que al hacer click se dirija a la seccion-->
     <br />
     <a href="#yellow">Seccion yellow</a>
     <br />
     <a href="#orange">Seccion orange</a>
     <br />
-    <!-- Etiquetas de imagenes -->
+    <!-- Etiquetas de imagenes  - Podemoa incluir una imagen-->
+    <!--src funciona como un enlace para cargar la imagen-->
+    <!--ALT tiene que ver con el texto alternativo. Sirve para el posicionamiento. También cuando el texto está roto pondrá el texto-->
+    <!--style ajusta el tamaño de la imagen.-->
     <img
       src="./images/animal133"
       title="Titulo"
@@ -39,10 +50,11 @@
       alt="imagen2"
     />
 
-    <!-- Etiquetas de video -->
+    <!-- Etiquetas de video / Va a depender del navegador-->
     1.- wmv 2.- MP4 3.- Ogg video/ogg
-    <video width="300" height="240" controls autoplay preload muted>
-      <source src="./images/song.mp4" type="video/mp4" />
+    <video width="300" height="240" controls autoplay preload muted> <!-- con control salen los botones en pantalla, autoplay para que inicialice, preload para que vaya cargando el boffer y muted para que esté andando sin audio-->
+     <!--whidth ancho - height largo--> 
+      <source src="./images/song.mp4" type="video/mp4" /> <!--src = enlace de video / type= tipo-->
       No soporta Etiqueta
     </video>
     <!-- Etiquetas de audio -->
@@ -64,22 +76,22 @@
     date => Fecha <br />
     url => enlaces <br />
     hidden => oculto <br />
-    <form>
+    <form> <!--etiqueta para armar formularios / requireed significa que el campo debe completarse si o si-->
       <input
         maxlength="10"
         name="ejemplo"
         type="text"
         placeholder="Ingrese nombre"
-        required
+        required 
         tabindex="2"
       />
       <br />
       <input type="number" required tabindex="1" />
       <br />
-      <input type="radio" name="sexo" value="M" checked /> M
+      <input type="radio" name="sexo" value="M" checked /> M <!--se le pasa valor por defecto-->
       <input type="radio" name="sexo" value="F" /> F
       <br />
-      <input type="checkbox" name="seleccion" /> A
+      <input type="checkbox" name="seleccion" /> A <!--Inpiut de selección ,múltiple-->
       <input type="checkbox" name="seleccion" /> B
       <input type="checkbox" name="seleccion" /> C
       <br />
@@ -122,7 +134,7 @@
       Submit => enviar la informacion<br />
       reset => limpia el formulario<br />
       <button type="reset">Limpiar</button>
-      <button type="submit">Submit</button>
+      <button type="submit">Enviar</button>
     </form>
   </body>
 </html>
