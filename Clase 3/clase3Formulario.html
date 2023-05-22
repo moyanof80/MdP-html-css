@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="María Fernanda Moyano"> 
+    <meta name="description" content="Aprendiendo HTML desde cero. Formulario">
+    <meta name="keywords" content="página web,formulario, primeros pasos, etiquetas, posicionamiento, curriculum, laboral">
+    <meta name="robots" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <head>
+        <h1>---------------------------</h1>
+    </head>
+    <main>
+        <article>
+            <section>
+                <form  method="POST" action="clase3Formulario.html"> <!-- la etiqueta formulario tiene un metodo-->
+                    <!--el método es la forma en la que vamos a enviar la información-->
+                    <!-- hay dos maneras: GET (envia los datos a través de la url)  POST (Lo envía de manera oculta)-->
+                    <!--action es la ruta a donde vamos enviar los datos-->
+                    <label1 for="fnombre">Nombre  : </label1>
+                    <input type="text" id="fnombre" name="fnombre"><br /><br />
+                    <label for="fapellido">Apellido:</label>
+                    <input type="text" id="fapellido"name="fapellido"><br /><br />
+                    <label type="fpais">País:</label>
+                    <input type="text" id="fpais" name="fpais"><br /><br />
+                    <label type="text">e-mail:</label>
+                    <input type="text" id="fe-mail"name="fe-mail"><br /><br />
+                    <label type="text">Trabaja</label>
+                    <input type="radio" name="trabaja" value="SI" checked /> SI
+                    <input type="radio" name="trabaja" value="NO" /> NO
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar"><br>
+                </form>
+                <br>
+            </section>
+        </article>
+    
+</body>
+</html>
