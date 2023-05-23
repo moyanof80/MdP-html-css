@@ -5,17 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hojas de Estilo</title>
+
+    <!--Segunda forma de declarar: En la cabecera-->
+    <!--Se aplica a todos los elementos que tenga CODE-->
+    <style>
+        
+        code{
+            font-size: 14px;
+            color: blue;
+            width: 25%;
+            background-color: #cecece;
+            padding: 30px;
+            margin: 30px;
+            border: 2px solid #0000;
+
+        }
+        .classUno{
+            padding: 10px;
+            color: orange;
+        }
+
+        .fontSize10{
+            font-size: 40px;
+        }
+        .classDos{
+            padding: 20px;
+            color: blue;
+
+        }
+        
+    </style>
 </head>
 <body>
     <p class="" id="">Ejemplo</p>
     <p>Ejemplo 3</p>
 
     <!--Formas de las hojas de estilo (3 versiones)-->
-    1- Forma de Css inñline (CSS1)
+    1- Forma de Css inline (CSS1)
     2. Forma de CSS head (CSS2)
     3- Forma de Css archivo.css (vincula con el documento html)(Css)
 
-    <h1> Selectores... de Class</h1>
+    <h1 class="classUno fontSize10" >Selectores... de Class</h1>    
     <code>
         .nombreClase{
             atributo:valor;
@@ -25,7 +55,7 @@
     </code>
 
     
-    <h1>Selectores  de ID</h1>
+    <h1 class="fontSize10 classUno" id="classDos" style="color:red">Selectores  de ID</h1>
     <code>  
         #nombreClass{
             atributo:valor;
@@ -42,17 +72,32 @@
 
     <!--Forma de declarar los colores-->
 
+    <!--Primera forma de declarar en etiqueta HTML-->
+
     <p style="color:#23CFEF">Hoja de Estilo</p> <!--Formato hexadecimal, es el más usado por la variedad de colores-->
     <p style="color: rgba(255,0,0)">Hoja de estilo</p><!--Formato RGB - a le da opacidad-->
     <!--Las medidas son absolutas o relativas-->
 
-    <!--Unidades de medida ABSOLUTAS:
+    <!--Unidades de medida ABSOLUTAS (No se recomiendan usar en pantalla, es decir, en los diferentes display. Ser utiliza 
+        para el diseño de impresiones):
     cm=> centimetros;
     mm=> milimetros;
     in=> pilgadas;
     px=> pixeles;
     pt=> puntos;
-    pc=> picas
+    pc=> picas.
+    -->
+
+    <!--Unidedes de medida RELATIVAS (Unidades de longitud, estas son las medidas 
+        que debemos utilizar NO las absolutas):
+
+    em=> en función al tamaño de fuente (font size);
+    ex=> en función al tamaño de las x height (x-height);
+    rem=> font - size root;
+    vw=> viewport(distintas unidades de medida del display) width;
+    vh=> viewport height;
+    %=> Porcentaje;
+    
     -->
     
 
