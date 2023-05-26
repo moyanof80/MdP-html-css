@@ -1,0 +1,28 @@
+code{
+    font-size: 14px;
+    color: blue;
+    width: 25%;
+    background-color: #cecece;
+    padding: 30 px;
+    margin: 30px;
+    border: 2px solid #0000;
+}
+#classDos{
+    padding: 20px;
+    color: blue;
+}
+
+.classUno{
+    padding: 10px;
+    color: orange;
+}
+.fontSize10{
+    font-size: 40px;
+
+}
+
+
+p.intro{
+    font-size: 20px;
+    color:orange;
+}
