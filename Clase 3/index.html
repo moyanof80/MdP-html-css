@@ -1,91 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hojas de Estilo</title>
 
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi pagina..</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Roboto:ital,wght@0,100;1,100&display=swap"
+            rel="stylesheet">
+        <link href="./menu.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <img />
+        </header>
+        <aside>
+            <nav class="menuH">
+                <ul>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                </ul>
+    
+            </nav>
+    
+        </aside>
+        
+            
+        <nav class="menuV">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+    
+        </nav>
+        <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br>
+        <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br>
+        <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br>   <br>
+        <main>
+            <div>
+                <p class="title">Title parrafo</p>
+                <p>Contenido del parrafo......... ...</p>
+            </div>
+        
+            <div>
+                <p class="title">Title parrafo</p>
+                <p>
+                    <img src="bg.jpg"  >
+                    Contenido del parrafo......... ...</p>
+            </div>
+          
+            <div>
+                <p class="title">Title parrafo</p>
+                <p>Contenido del parrafo......... ...</p>
+            </div>
+        </main>
+        <footer>
+    
+        </footer>
+    
+    </body>
+
+       <!--Nos permite dar la parte visual de nuestro código de html
+Es un  lenguaje de marcado, posee etiquetas, selectores que n os permiten
+cambiar los atributos según donde ponemos la etiqueta.
+Hay dos atributos esenciales en HTRML: CLASS y ID, son elementos que nos permiten
+relacionar nuestro código con la hoja de estilo o con java script.
+Existe otra etiqueta esencial que viene con las hojas de estilo
+Hay  tres formas de usar las hojas de estilo:
+1 - en linea
+2 dentro de la cabecera
+3 en otro archivo aparte que tenga extensión .css--> 
     <!--Segunda forma de declarar: En la cabecera-->
     <!--Se aplica a todos los elementos que tenga CODE-->
-    <style>
-        
-        code{
-            font-size: 14px;
-            color: blue;
-            width: 25%;
-            background-color: #cecece;
-            padding: 30px;
-            margin: 30px;
-            border: 2px solid #0000;
-
-        }
-        
-        .classDos{
-            padding: 20px;
-            color: blue;
-
-        }
-        .classUno{
-            padding: 10px;
-            color: orange;
-        }
-
-        .fontSize10{
-            font-size: 40px;
-        }
-
-        p.intro{
-            font-size: 20px;
-            color: orange;
-        }
-        
-
-        <link href="" rel="stylesheet"
-        
-    </style>
-</head>
-<body>
-    <p class="" id="">Ejemplo</p>
-    <p>Ejemplo 3</p>
-
     <!--Formas de las hojas de estilo (3 versiones)-->
     1- Forma de Css inline (CSS1)
     2. Forma de CSS head (CSS2)
     3- Forma de Css archivo.css (vincula con el documento html)(Css)
 
-    <h1 class="classUno fontSize10" >Selectores... de Class</h1>    
-    <code>
-        .nombreClase{
-            atributo:valor;
-            atributo:valor;
-        }
-
-    </code>
-
+   
+    <!-- son selectores de clase, porque tienen el punto --> 
     
-    <h1 class="fontSize10 classUno" id="classDos" style="color:red">Selectores  de ID</h1>
-    <code>  
-        #nombreClass{
-            atributo:valor;
-            atributo:valor;
-        }
-    </code>
-    <h1>Selectores de Elementos (etiquetas html)</h1>
-    <code>
-        p{
-            atributo:valor;
-            atributo:valor;
-        }
-    </code>
+   
+
+    <!-- el selector de id lleva #delante del nombre -->
+    
 
     <!--Forma de declarar los colores-->
 
     <!--Primera forma de declarar en etiqueta HTML-->
 
-    <p style="color:#23CFEF">Hoja de Estilo</p> <!--Formato hexadecimal, es el más usado por la variedad de colores-->
-    <p style="color: rgba(255,0,0)">Hoja de estilo</p><!--Formato RGB - a le da opacidad-->
-    <!--Las medidas son absolutas o relativas-->
+        <!--Las medidas son absolutas o relativas-->
 
     <!--Unidades de medida ABSOLUTAS (No se recomiendan usar en pantalla, es decir, en los diferentes display. Ser utiliza 
         para el diseño de impresiones):
@@ -109,7 +121,4 @@
     
     -->
     
-
-
-</body>
-</html>
+</html>   
