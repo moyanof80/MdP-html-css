@@ -1,0 +1,84 @@
+/*
+*{
+    font-family: 'Roboto', sans-serif;
+}
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; Tipos de fuentes importadas*/
+:root{
+    --font-title: 'Roboto', sans-serif;
+    --font-subtitle: 'Source Sans Pro', sans-serif;
+    --color-primary: #cecece;
+    --color-secondary: #000000;
+    --size-font-s: 14px;
+    --size-font-m: 18px;
+    --size-font-l: 22px;
+
+}
+.title{
+    color: var(--color-secondary);
+    font-family: var(--font-title);
+    font-size: var(--size-font-m);
+}
+
+.menuH{
+    margin: auto; /*solo toma el margen establecido*/
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.menuH ul, .menuV ul{
+    list-style: none; /*saca la viñeta pero deja el espacio como si lo tuviera*/
+    margin: 0px;
+    padding: 0px;
+}
+.menuH ul li{
+    float:left;
+    padding-left:10px;
+    padding-right: 10px;
+    border: 2px solid #f60e0e;
+}
+.menuH ul li a{
+    text-decoration: none; /*esto hará que los enlaces no tengan el subrayado*/
+    color: var(--color-primary);
+    font-family: var(--font-subtitle);
+
+}
+.menuH ul li a:hover{
+    color: var(--color-secondary);
+    border-bottom: 1px solid #000000;
+}
+
+.menuV{
+    background-color: aliceblue;
+    padding-left: 25px;
+    padding-top: 20px;
+    font-family: var(--font-title);
+    width:300px;
+}
+
+.menuV{
+    text-decoration: none;
+    display: black;
+    width:250px;
+    color: var (--color-secondary);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px; /*nos permite ver la caja*/
+}
+.menuV ul li a:hover{
+    background-color: rgb(142,175,237);
+    color: #000000;
+    transform: scale(1.1,1.5);
+}
+body{
+    background-image:url("bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /*todo lo que abarca el body*/
+}
+img{
+    width: 200px;
+}
+

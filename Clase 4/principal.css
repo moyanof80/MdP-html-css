@@ -1,28 +1,46 @@
-code{
-    font-size: 14px;
-    color: blue;
-    width: 25%;
-    background-color: #cecece;
-    padding: 30 px;
-    margin: 30px;
-    border: 2px solid #0000;
+/*font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tajawal', sans-serif;*/
+:root{
+    --font-title: 'Merriweather', serif;
+    --font-subtitle:'Roboto', sans-serif;
+    --font-h1:'Tajawal', sans-serif;
+    --color-primary: #1a555a;
+    --color-secondary: #000000;
+    --color-ter: #360478;
+
+    --size-font-s: 18px;
+    --size-font-m: 22px;
+    --size-font-l: 40px;
 }
-#classDos{
-    padding: 20px;
-    color: blue;
+.title{
+    color: var(--color-secondary);
+    font-family: var(--font-subtitle);
+    font-size: var(--size-font-l);
+
+}
+.nombre{
+    color: var(--color-primary);
+    font-family: var(--font-title);
+    font-size:var(--size-font-m) ;
+}
+.datos {
+    color: var(--color-ter);
+    font-family: var(--font-h1);
+    font-size: var(--size-font-s);
+}
+.datos h4{
+    text-decoration: none; /*esto hará que los enlaces no tengan el subrayado*/
+    color: var(--color-primary);
+    font-family: var(--font-subtitle);
 }
 
-.classUno{
-    padding: 10px;
-    color: orange;
-}
-.fontSize10{
-    font-size: 40px;
-
-}
-
-
-p.intro{
-    font-size: 20px;
-    color:orange;
-}
+.datos3{
+    text-decoration: none;
+    display: black;
+    width:250px;
+    color: var (--color-secondary);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px; /*nos permite ver la caja*/
